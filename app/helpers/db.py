@@ -12,10 +12,12 @@ class Database:
             Password="test"
 
             if os.getenv('env') == "testing":
-                postgresdb = 'freshs'
-                Host="localhost"
-                User="postgres"
-                Password= "test"
+                postgresdb = 'dfdert8uao9scl'
+                Host="ec2-54-235-68-3.compute-1.amazonaws.com"
+                User="asyxokpadmpxsb"
+                port="5432"
+
+                Password= "bb906ae0286b861205bb135cef3529aa1e2a64abaaf6a79587a6e8d56f155e4f"
 
             self.connection = psycopg2.connect(
                     database=postgresdb, host=Host, user=User,
