@@ -11,7 +11,7 @@ class BaseTestCase(unittest.TestCase):
 #         """
 #         Create the database and commits any changes made permanently
 
-        # app.testing = True
+        app.testing = True
         self.test_client = app.test_client()
         self.database = Database()
         self.database.create_tables()
