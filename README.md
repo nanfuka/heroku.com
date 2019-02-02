@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/nanfuka/heroku.com.svg?branch=login)](https://travis-ci.com/nanfuka/heroku.com)[![Maintainability](https://api.codeclimate.com/v1/badges/8134adf8a1711f0bc673/maintainability)](https://codeclimate.com/github/nanfuka/heroku.com/maintainability)
+[![Build Status](https://travis-ci.com/nanfuka/heroku.com.svg?branch=login)](https://travis-ci.com/nanfuka/heroku.com)[![Maintainability](https://api.codeclimate.com/v1/badges/8134adf8a1711f0bc673/maintainability)](https://codeclimate.com/github/nanfuka/heroku.com/maintainability)[![Coverage Status](https://coveralls.io/repos/github/nanfuka/heroku.com/badge.svg?branch=login)](https://coveralls.io/github/nanfuka/heroku.com?branch=login)
 
 ireporter_api
 Description
