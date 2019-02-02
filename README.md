@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/nanfuka/heroku.com.svg?branch=login)](https://travis-ci.com/nanfuka/heroku.com)[![Maintainability](https://api.codeclimate.com/v1/badges/8134adf8a1711f0bc673/maintainability)](https://codeclimate.com/github/nanfuka/heroku.com/maintainability)
+
 ireporter_api
 Description
 iReporter is an application that enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention. It was developed because corruption is a huge bane to Africa's development.
