@@ -1,46 +1,23 @@
-"""configurations for app"""
 import os
 
+base_directory = os.path.abspath(os.path.dirname(__file__))
 
-class BaseConfig(object):
-    """
-    Common configurations
-    """
+class Config(object):
+    DEBUG = True
     TESTING = False
+
+class DevelopmentConfig(Config):
+    DEVELOPMENT = True
+
+class ProductionConfig(Config):
     DEBUG = False
-    # Put any configurations here that are common across all environments
 
-
-class TestingConfig(BaseConfig):
-    """Configurations for Testing, with a separate test database."""
-    SQLALCHEMY_DATABASE_URI =\
-        "postgresql://postgres:magic@localhost/book_test_db"
+class TestingConfig(Config):
     TESTING = True
-    DEBUG = True
 
-
-class DevelopmentConfig(BaseConfig):
-    """
-    Development configurations
-    """
-    SQLALCHEMY_DATABASE_URI =\
-        "postgresql://postgres:magic@localhost/book_a_meal_db"
-    DEBUG = True
-
-
-class ProductionConfig(BaseConfig):
-    """
-    Production configurations
-    """
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
-    DEBUG = False
-
-
-app_config = {
-    'development': DevelopmentConfig,
-    'testing': TestingConfig,
-    'production': ProductionConfig
+runtime_mode = "development"
+environment_config = {
+    "development": DevelopmentConfig,
+    "testing": TestingConfig,
+    "production": ProductionConfig
 }
-
-if __name__ == '__main__':
-    app_config['development']
