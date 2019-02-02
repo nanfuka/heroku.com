@@ -6,10 +6,11 @@ from pprint import pprint
 class Database:
     def __init__(self):
         try:
-            postgresdb = 'fresh'
-            Host="localhost"
-            User="postgres"
-            Password="test"
+            postgresdb = 'dfdert8uao9scl'
+            Host="ec2-54-235-68-3.compute-1.amazonaws.com"
+            User="asyxokpadmpxsb"
+            Password="bb906ae0286b861205bb135cef3529aa1e2a64abaaf6a79587a6e8d56f155e4f"
+            port="5432"
 
             if os.getenv('env') == "testing":
                 postgresdb = 'dfdert8uao9scl'
