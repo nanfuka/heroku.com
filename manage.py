@@ -16,6 +16,7 @@ class Database:
                 Host="localhost"
                 User="postgres"
                 port="5432"
+
                 Password= "test"
 
             self.connection = psycopg2.connect(
